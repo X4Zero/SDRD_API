@@ -1,0 +1,17 @@
+use sdrd;
+select * from usuario;
+select * from rol;
+select * from paciente;
+select * from diagnostico;
+select * from usuario_has_rol;
+
+INSERT INTO rol VALUES (1,'usuario'),(2,'medico'),(3,'administrador');
+
+INSERT INTO usuario VALUES (1,'aromerob','pass','antony','romero','developer'),
+(2,'sravicha','pase','sergio','ravichagua','developer');
+
+INSERT INTO usuario_has_rol VALUES (1,3),(2,3);
+
+INSERT INTO paciente VALUES('71260558','jose','ramos','71260558','calle las magnolias 128','995388118'),
+('71260666','alberto','torres','71260666','calle 2 urb. ciudad de dios','995587622');
+
